@@ -1,0 +1,36 @@
+.section-heading {
+    margin: 3rem 0 1.25rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+}
+
+.section-heading:first-of-type {
+    margin-top: 0;
+}
+
+.project-points {
+    margin: 1rem 0 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tech-list li {
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    background: #f1f1f5;
+    color: #151525;
+}

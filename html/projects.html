@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects - Thomas Kilian</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/education.css" rel="stylesheet">
+        <link href="../css/projects.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="container">
+                <nav id="header-pill">
+                    <a class="option-pill other-pills" href="index.html">Home</a>
+                    <a class="option-pill other-pills" href="education.html">Education</a>
+                    <a class="option-pill" id="main-pill" href="projects.html">Projects</a>
+                    <a class="option-pill other-pills" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <main class="container page">
+            <h1 class="page-title">Projects</h1>
+
+            <h2 class="section-heading">Personal Projects</h2>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span class="highlight">Self-Hosted Linux Server</span></h3>
+                    <span class="badge">Personal</span>
+                </div>
+                <p class="card-meta">2026</p>
+                <ul class="project-points">
+                    <li>Turned an old Lenovo laptop into an always-on Ubuntu home server that hosts my own projects, including Minecraft servers and my Discord bot.</li>
+                    <li>Wrote systemd services so each server starts on boot, restarts after a crash and shuts down cleanly.</li>
+                    <li>Secured remote access with SSH key-only login, and put the game server behind TCPShield with a custom domain to hide my home IP and protect against DDoS attacks.</li>
+                </ul>
+                <ul class="tech-list">
+                    <li>Ubuntu Server</li>
+                    <li>systemd</li>
+                    <li>SSH</li>
+                    <li>Bash</li>
+                    <li>DNS</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span class="highlight">Spawn Management Plugin</span></h3>
+                    <span class="badge">Personal</span>
+                </div>
+                <p class="card-meta">Minecraft server plugin</p>
+                <ul class="project-points">
+                    <li>Lets server admins set, teleport to and delete spawn points separately for the Overworld, Nether and End.</li>
+                    <li>Includes a chest-style GUI menu for choosing a dimension, tab completion and permission-based access control.</li>
+                    <li>A configurable teleport countdown cancels if the player moves, with pending teleports tracked per player so overlapping requests don't clash.</li>
+                    <li>Sends new players and players without a bed to the custom spawn on first join and respawn.</li>
+                </ul>
+                <ul class="tech-list">
+                    <li>Java</li>
+                    <li>Paper API</li>
+                    <li>Maven</li>
+                    <li>YAML</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span class="highlight">Discord Bot</span></h3>
+                    <span class="badge">Personal</span>
+                </div>
+                <p class="card-meta">Self-hosted on my Linux server</p>
+                <ul class="project-points">
+                    <li>A Discord bot with a betting game that tracks each user's balance.</li>
+                    <li>Packaged as a single runnable jar, with the bot token kept in an environment variable rather than in the code.</li>
+                </ul>
+                <ul class="tech-list">
+                    <li>Java</li>
+                    <li>JDA</li>
+                    <li>Maven</li>
+                </ul>
+            </article>
+
+            <h2 class="section-heading">University Projects</h2>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span class="highlight">Networked Two-Player Memory Game</span></h3>
+                    <span class="badge">Team of 4</span>
+                </div>
+                <p class="card-meta">University coursework &middot; 2025/26</p>
+                <ul class="project-points">
+                    <li>A memory game played across two Raspberry Pi Pico W devices with buttons and LEDs, which communicate over Wi-Fi using MQTT.</li>
+                    <li>Players take turns creating and copying button sequences, with each round getting longer and faster.</li>
+                    <li>A live web leaderboard updates in real time over MQTT WebSockets.</li>
+                </ul>
+                <ul class="tech-list">
+                    <li>MicroPython</li>
+                    <li>Raspberry Pi Pico W</li>
+                    <li>MQTT</li>
+                    <li>HTML/JavaScript</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span class="highlight">Desktop Messaging App</span></h3>
+                    <span class="badge">Team of 3</span>
+                </div>
+                <p class="card-meta">University coursework &middot; 2026</p>
+                <ul class="project-points">
+                    <li>A desktop messaging app with a JavaFX GUI, built using an MVC structure.</li>
+                    <li>Supports one-to-one and group chats, message search, contact management and multiple user profiles.</li>
+                    <li>Saves app data between sessions using Java serialisation.</li>
+                </ul>
+                <ul class="tech-list">
+                    <li>Java</li>
+                    <li>JavaFX</li>
+                    <li>Maven</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span class="highlight">Two-Player Strategy Game</span></h3>
+                    <span class="badge">Solo</span>
+                </div>
+                <p class="card-meta">University coursework &middot; 2025</p>
+                <ul class="project-points">
+                    <li>A turn-based grid game with a full GUI, including menus, a help screen and an interactive game board.</li>
+                    <li>Randomised board generation places differently shaped pieces without overlaps.</li>
+                    <li>Saves and loads the full game state to file, with a turn timer and automatic win/loss detection.</li>
+                </ul>
+                <ul class="tech-list">
+                    <li>Java</li>
+                    <li>Swing</li>
+                </ul>
+            </article>
+        </main>
+    </body>
+</html>

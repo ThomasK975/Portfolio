@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact - Thomas Kilian</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/education.css" rel="stylesheet">
+        <link href="../css/contact.css" rel="stylesheet">
+        <script src="../js/contact.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="container">
+                <nav id="header-pill">
+                    <a class="option-pill other-pills" href="index.html">Home</a>
+                    <a class="option-pill other-pills" href="education.html">Education</a>
+                    <a class="option-pill other-pills" href="projects.html">Projects</a>
+                    <a class="option-pill" id="main-pill" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <main class="container page">
+            <h1 class="page-title">Contact</h1>
+
+            <article class="card">
+                <p class="card-text contact-intro">
+                    Have a question or an opportunity? Send me a message and I will reply to the
+                    email address you provide.
+                </p>
+
+                <form class="contact-form" action="https://formspree.io/f/xeagollg" method="POST">
+                    <label class="form-field">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+
+                    <label class="form-field">
+                        <span>Message</span>
+                        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                    </label>
+
+                    <button class="btn btn-primary form-submit" type="submit">Send message</button>
+                    <p id="form-status" class="form-status" role="status"></p>
+                </form>
+            </article>
+
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/thomas-edward-kilian/" target="_blank" rel="noopener">
+                    <img class="icons" src="../images/linkedin-icon.png" alt="LinkedIn"> LinkedIn
+                </a>
+                <a href="https://github.com/ThomasK975" target="_blank" rel="noopener">
+                    <img class="icons" src="../images/github-icon.png" alt="GitHub"> GitHub
+                </a>
+            </div>
+        </main>
+    </body>
+</html>
