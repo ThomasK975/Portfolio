@@ -1,8 +1,33 @@
+/* TeX Gyre Heros: free Helvetica-style font (GUST Font License, see fonts/) */
+@font-face {
+    font-family: "TeX Gyre Heros";
+    src: url("../fonts/texgyreheros-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TeX Gyre Heros";
+    src: url("../fonts/texgyreheros-bold.woff2") format("woff2");
+    font-weight: 600 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TeX Gyre Heros";
+    src: url("../fonts/texgyreheros-italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: JetBrains Mono, monospace;
+    font-family: "TeX Gyre Heros", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hero {
@@ -119,7 +144,10 @@ html, body {
 #other-links {
     margin-top: 15rem;
     color: #555555;
-    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 #other-links {
@@ -138,11 +166,13 @@ html, body {
 .splitters {
     font-size: 2rem;
     font-weight: 100;
-    margin-left: -0.8rem;
+    line-height: 1;
+    position: relative;
+    top: -0.2em;
 }
 
 #github-icon {
-    margin-left: -0.8rem;
+    margin-left: 0;
 }
 
 #other-links a {
